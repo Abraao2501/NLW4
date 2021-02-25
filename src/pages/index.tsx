@@ -1,9 +1,12 @@
 import { ExperienceBar } from "../components/ExperienceBar";
-import { Profile } from "../components/Profile"
-import { CompletedChallanges } from "../components/CompletedChallanges"
-import styles from "../styles/pages/Home.module.css"
+import { Profile } from "../components/Profile";
+import { CompletedChallanges } from "../components/CompletedChallanges";
+import { ChallengeBox } from "../components/ChallengeBox";
 import { Countdown } from "../components/Countdown";
-import Head from 'next/head'
+
+import styles from "../styles/pages/Home.module.css";
+
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -12,7 +15,6 @@ export default function Home() {
         <title>Início | Timez</title>
       </Head>
 
-     
       <ExperienceBar />
 
       <section>
@@ -21,8 +23,10 @@ export default function Home() {
           <CompletedChallanges />
           <Countdown />
         </div>
-        <div></div>
+        <div>
+          <ChallengeBox />
+        </div>
       </section>
     </div>
-  )
+  );
 }
